@@ -1,1 +1,47 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diamond Doll's Mystery Box</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #150a24;
+    --bg-2: #1f1136;
+    --ice: #8eecff;
+    --rose: #ff8fcb;
+    --gold: #f7c948;
+    --cream: #f6f1fb;
+    --muted: #b6a6d6;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background: radial-gradient(circle at 20% 0%, var(--bg-2), var(--bg) 60%);
+    color: var(--cream);
+    font-family: 'Inter', sans-serif;
+    min-height:100vh;
+    overflow-x:hidden;
+  }
+  .eyebrow{
+    font-size:0.75rem;
+    letter-spacing:0.28em;
+    text-transform:uppercase;
+    color: var(--gold);
+    font-weight:600;
+  }
+  h1,h2,h3{ font-family:'Unbounded', sans-serif; }
+  nav{
+    display:flex; justify-content:space-between; align-items:center;
+    padding: 1.5rem 6vw;
+  }
+  nav .logo{ font-family:'Unbounded'; font-weight:800; font-size:1.1rem; letter-spacing:0.02em; }
+  nav .logo span{ color: var(--rose); }
+  nav a.cta{
+    border:1px solid var(--ice); color:var(--ice);
+    padding:0.5rem 1.1rem; border-radius:999px;
+    text-decoration:none; font-size:0.85rem; font-weight:500;
+    transition: all 0.25s ease;
+  }
